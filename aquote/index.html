@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quote</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .quote {
+            font-family: 'Special Elite', cursive;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen text-white bg-black">
+    <div class="text-center quote">
+        <h1 class="text-4xl font-bold">"Love is not only something you feel, it is something you do."</h1>
+        <p class="text-xl mt-4">- David Wilkerson</p>
+    </div>
+    <script>
+        var images = ['assets/img1.jpg', 'assets/img2.avif']; // replace with your image URLs
+        document.body.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+    </script>
+</body>
+</html>
